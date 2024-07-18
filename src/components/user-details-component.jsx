@@ -6,14 +6,16 @@ const UserDetails = ({ user }) => {
   return (
     <>
       <h2>Korisnički detalji</h2>
-      <p>
-        <b>Id:</b> {user.id}
-      </p>
+      <img src={user.avatar_url}></img>
       <p>
         <b>Ime:</b> {user.name}
       </p>
       <p>
         <b>Opis:</b> {user.bio}
+      </p>
+
+      <p>
+        <b>Lokacija:</b> {user.location}
       </p>
     </>
   );
